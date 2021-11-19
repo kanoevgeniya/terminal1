@@ -1,0 +1,68 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Postman
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Jmeter
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Checklists
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Bag_reports
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch SQL
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Charles
+
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git branch Mobile_testing
+
+
+2. Запушить все ветки на внешний репозиторий
+Evgeniya@WIN-GF3MV1IR31P MINGW64 /d/Evgeniya/QA couse/lesson2/terminal (main)
+$ git push -u origin --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+$ git checkout Bag_reports
+$ touch report1.txt
+$ vim report1.txt   i  *набрать структуру репорта* esc, :wq
+
+4. Запушить структуру багрепорта на внешний репозиторий
+$ git add report1.txt
+$ git commit -m "create report1.txt"
+$ pit push
+
+5. Вмержить ветку Bag Reports в Main
+$ git checkout main
+$ git merge Bag_reports
+$ git commit -am "merge Bag_report to main"
+
+6. Запушить main на внешний репозиторий.
+$ git push -u origin main
+
+7. В ветке CheckLists набросать структуру чек листа.
+$ git checkout Checklists
+touch checklist1.txt
+vim checklist1.txt   i *структура чек-листа* , ecs, :wq
+
+8. Запушить структуру на внешний репозиторий
+$ git add checklist1.txt
+$ git commit -m "create checklist1.txt"
+$ git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+на внешнем резозитории нажать кнопку "Compare&pull request", проверить откуда куда мержим, нажать "Create pull reqiest", "Merge pull request", "Confirm merge"
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main
+git pull
