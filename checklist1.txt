@@ -1,0 +1,11 @@
+ID checklist:
+Title:
+Description:
+Build:
+Enviroment:
+Tester:
+Tests types:
+Tests names:
+Tests results:
+Bug link:
+
